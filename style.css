@@ -1,0 +1,61 @@
+/* Reset default browser styles */
+html, body, div, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Set a base font size and family */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f0f0f0; /* CHANGE */
+  color: #333; /* CHANGE */
+}
+
+/* Container for the app */
+.container {
+  max-width: 360px; /* CHANGE */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff; /* CHANGE */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333; /* CHANGE */
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0074d9; /* CHANGE */
+  color: #fff; /* CHANGE */
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc; /* CHANGE */
+  border-radius: 5px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
+

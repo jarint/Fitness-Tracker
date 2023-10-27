@@ -1,0 +1,73 @@
+# Dependency directories
+/node_modules
+/.pnp
+.pnp.js
+
+# Optional: If using Yarn, this should be uncommented
+# /yarn-error.log
+# /yarn.lock
+
+# Optional: If using npm, this should be uncommented
+# /package-lock.json
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*.local
+
+# Build files
+/build
+
+# Coverage directory
+/coverage
+
+# Generated files
+/jest-screenshot
+/.jest-test-results.json
+/jest-resolve-error-cache.json
+/reportWebVitals
+/yarn-error.log
+/test-results.xml
+
+# Dependency directory for create-react-app
+/.eslintcache
+
+# Logs
+/logs
+
+# User-specific files
+*.log
+*.pid
+*.seed
+*.pid.lock
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.pnp
+
+# Editor-specific files
+.idea
+.vscode
+*.swp
+.DS_Store
+
+# Mac OS system files
+.AppleDouble
+.DS_Store
+
+# Node.js debugging files
+node_modules/
+.pnp
+.cjs
+.esm.js
+.hmr.ts
+.cjs.js
+.esm
+.hmr.js
+.css.js
+.d.ts
+.mjs

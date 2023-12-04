@@ -319,7 +319,7 @@ function Workouts({
             handleOptionCLicked={handleRenameExercise}
           >
             <div className="popup-new_name">
-              <label>New Name: </label>
+              <label className="w_newname">New Name: </label>
               <input
                 type="text"
                 placeholder="New.."

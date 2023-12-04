@@ -18,6 +18,15 @@
   justify-content: center;
 }
 
+.popup-new_name {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.w_newname {
+  font-weight: bold;
+  transform: translateY(-7px);
+}
 .add_now {
   color: white;
   margin: 100px;

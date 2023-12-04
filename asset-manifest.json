@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.2c544c11.css",
-    "main.js": "/static/js/main.ac63974a.js",
-    "static/js/787.52a7a319.chunk.js": "/static/js/787.52a7a319.chunk.js",
-    "static/media/trash3.svg": "/static/media/trash3.73f2592938b9ad25d2c9e61ef933c937.svg",
-    "index.html": "/index.html",
-    "static/media/back_arrow.svg": "/static/media/back_arrow.70b71e1b1805572e030143f5655c743d.svg",
-    "main.2c544c11.css.map": "/static/css/main.2c544c11.css.map",
-    "main.ac63974a.js.map": "/static/js/main.ac63974a.js.map",
-    "787.52a7a319.chunk.js.map": "/static/js/787.52a7a319.chunk.js.map"
+    "main.css": "/fitness-tracker/static/css/main.b96a891e.css",
+    "main.js": "/fitness-tracker/static/js/main.2916a643.js",
+    "static/js/787.52a7a319.chunk.js": "/fitness-tracker/static/js/787.52a7a319.chunk.js",
+    "static/media/trash3.svg": "/fitness-tracker/static/media/trash3.73f2592938b9ad25d2c9e61ef933c937.svg",
+    "index.html": "/fitness-tracker/index.html",
+    "static/media/back_arrow.svg": "/fitness-tracker/static/media/back_arrow.70b71e1b1805572e030143f5655c743d.svg",
+    "main.b96a891e.css.map": "/fitness-tracker/static/css/main.b96a891e.css.map",
+    "main.2916a643.js.map": "/fitness-tracker/static/js/main.2916a643.js.map",
+    "787.52a7a319.chunk.js.map": "/fitness-tracker/static/js/787.52a7a319.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c544c11.css",
-    "static/js/main.ac63974a.js"
+    "static/css/main.b96a891e.css",
+    "static/js/main.2916a643.js"
   ]
 }

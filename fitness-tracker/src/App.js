@@ -12,8 +12,8 @@ function App() {
     // Moved the home page to a separate file
     <BrowserRouter>
       <Routes>
-        <Route path = '/' element = {<Home />} />
-        <Route path = '/schedule' element = {<Schedule />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/schedule' element={<Schedule />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,38 +1,174 @@
-.App {
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+body{
+  background-color: lightblue;
+  /* width:768px; */
+  height: 1024px;
+}
+
+button.dayEvent{
+  /* border: 0; */
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  height: 95%;
+  width: 100%
+}
+
+
+h2{
+  background-color: aliceblue;
+  padding:2%;
+  text-align: center;
+  /* width: 100%; */
+}
+
+h5{
+  background-color: azure;
+  font-size: large;
+  margin: 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input{
+  font-size: 24px;
+  margin: 0px 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+label{
   display: flex;
-  flex-direction: column;
+  font-size: 24px;
+  margin: 10px;
+}
+
+Link, a{
+  text-decoration: none;
+  color: black;
+}
+
+/* .banner{
+  background-color:cornflowerblue;
+  color: aliceblue;
+  padding: 5px;
+  text-align: center;
+} */
+
+/* For Calendar.js */
+.calendar {
   align-items: center;
+  border-radius: 8px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* width: 100%; */
+}
+
+.day{
+  /* border: navy 3px solid; */
+  margin: 1%;
+  /* padding: 1%; */
+  height: 500px;
+  width: 100px
+}
+
+.event{
+  background-color: dodgerblue;
+  border: 3px solid blue;
+  color: aliceblue;
+  font-size: large;
+  margin: 10px 0;
+}
+
+.gridcolumn{
+  padding: 0px;
+}
+
+.column{
+  border-bottom: 2px solid gray;
+  display: grid;
+  margin: 0px;
+  padding: 20px 0px;
+}
+
+.schedule{
+  background-color: red;
+  position: relative;
+  top:-30%;
+}
+
+/* Activities */
+.activities{
+  margin-right: 5%;
+}
+.info{
+  border-radius: 8px;
+  /* margin: 10%; */
+  padding: 5%;
+  border: navy 3px solid;
+  height: 150px;
+  width: 300px;
+}
+
+
+.info-panels{
+  display: flex;
+  justify-content: center;
+  /* padding: 2%; */
+}
+
+/* Navbar */
+.navbar{
+  background-color: dodgerblue;
+  border: 3px solid dodgerblue;
   color: white;
+  font-size: larger;
+  font-weight: bold;
+  height: 80px;
+  margin: 0;
+  justify-content: center;
+  width: 100%
 }
 
-.App-link {
-  color: #61dafb;
+/* Schedule Evnet Form */
+.formButton{
+  background-color: dodgerblue;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-size: 24px;;
+  /* margin-right: 100px; */
+  padding: 10px;
+  width: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formButtons{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.scheduleEvent{
+  border: 3px solid blue;
+  background-color: white;
+  margin: 50px;
+}
+
+.scheduleExercise{
+  background-color: lightblue;
+  display: grid;
+  padding: 10px;
+  margin: 10px;
+}
+
+#scheduleTitle{
+  text-align: center;
+  width:95%;
+}
+
+.time{
+  display: flex;
+  margin: 0;
+  padding: 0;
 }

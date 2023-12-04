@@ -174,18 +174,20 @@ a {
   border-radius: 5px;
   background-color: white;
   margin: 15px;
+  margin-top: -40px;
  
 }
 .label{
-  margin:7px;
-  font-size: 1em;
+  margin:5px;
+  font-size: .2em;
 }
 .formInput{
 font-size: 1em;
-height: 20px;
+height: 17px;
+width: 150px;
 }
 p{
-  margin-top:3px
+  margin-top: -1px
 }
 .scheduleExercise {
   background-color: lightblue;

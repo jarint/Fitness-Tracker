@@ -1,0 +1,129 @@
+.stats_container {
+  margin: 0;
+  width: 100vw;
+  height: 900px;
+  border: 0;
+  padding: 0;
+  background-color: rgb(156, 198, 236);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.s_exercise_info_date {
+  height: 40px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  border-radius: 10px;
+  background: rgb(97, 97, 192);
+  color: white;
+}
+
+.s_exercise_stats {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 30px;
+  width: 80%;
+  /* height: 90%; */
+  height: 1324px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8%;
+  align-items: center;
+  border: 3px solid rgb(97, 97, 192);
+}
+
+.s_exercise_name {
+  margin-top: 10px;
+  font-size: 40px;
+}
+.s_weight_input {
+  height: 40px;
+  width: 50px;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.s_set_input {
+  height: 40px;
+  width: 50px;
+  font-size: 20px;
+  margin-left: 45px;
+}
+
+.s_rep_input {
+  height: 40px;
+  width: 50px;
+  font-size: 20px;
+  margin-left: 40px;
+}
+
+.s_notes_input {
+  min-height: 70px;
+  min-width: 150px;
+  font-size: 10px;
+  margin-left: 30px;
+
+  max-width: 225px; /*Set the maximum width */
+  max-height: 150px; /* Set the maximum height */
+  resize: both; /* Allow vertical resizing (can be 'none', 'both', 'horizontal')*/
+}
+
+.s_weight_stat {
+  width: 70%;
+  display: flex;
+}
+
+.s_notes_stat {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.s_set_stat {
+  width: 70%;
+  display: flex;
+}
+
+.s_rep_stat {
+  width: 70%;
+  display: flex;
+}
+.s_buttons {
+  position: relative; /* Position the footer */
+  bottom: 20px; /* Adjust bottom spacing as needed */
+  margin-top: auto;
+
+  width: 70%;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  /* align-items: center; */
+  /* margin: 10px; */
+  margin-top: auto;
+}
+
+.s_cancel_button {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(237, 80, 75);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.s_save-button {
+  width: 100px;
+  height: 40px;
+  background-color: #b9f399;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}

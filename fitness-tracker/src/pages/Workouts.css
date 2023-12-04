@@ -1,0 +1,111 @@
+.workouts_container {
+  width: 100vw;
+  height: 100%;
+  background-color: rgb(156, 198, 236);
+}
+
+.workouts {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.whiteBox_container {
+  min-height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.add_now {
+  color: white;
+  margin: 100px;
+  text-align: center;
+}
+.exercise_container {
+  width: 80%;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid rgb(97, 97, 192);
+  padding-bottom: 100px;
+}
+
+.date_btn {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 50px;
+  width: 200px;
+  color: white;
+  background-color: rgb(40, 114, 179);
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.date_btn:hover {
+  cursor: pointer;
+  background-color: rgb(31, 94, 149);
+  border: 3px solid rgb(14, 48, 78);
+  transition: all 0.2s ease;
+}
+
+.add_btn {
+  cursor: pointer;
+  margin-top: 40px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background-color: rgb(119, 185, 22);
+  height: 40px;
+  font-size: x-large;
+  color: white;
+  /* position: absolute;
+  bottom: 5%; */
+  /* font-family: "Inter-Bold", Helvetica; */
+}
+
+.add_btn:hover {
+  /* background-color: rgb(119, 185, 22); */
+  background-color: rgb(77, 143, 16);
+  border: 3px solid rgb(59, 110, 12);
+  transition: all 0.2s ease;
+}
+
+.exercise_popup-children {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.popup-exercise {
+  font-weight: bold;
+  margin: 20px 0px 20px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Aligns items to the start (left) of the container */
+}
+
+.popup-stat {
+  font-weight: bold;
+  margin: 20px 0px 20px 0px;
+  width: 47%;
+  display: flex;
+  justify-content: space-between; /* Aligns items to the start (left) of the container */
+}
+
+.stat_input {
+  width: 40px;
+}
+
+.error {
+  color: crimson;
+  margin-top: 10px;
+}
+
+.delete_popup-children p {
+  margin-top: 60px;
+}

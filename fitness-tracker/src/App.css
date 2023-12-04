@@ -5,48 +5,49 @@
   }
 }
 
-body{
+body {
   background-color: lightblue;
   /* width:768px; */
-  height: 1024px;
+  height: 100vh;
+  /*height:1024px*/
 }
 
-button.dayEvent{
+button.dayEvent {
   /* border: 0; */
   display: flex;
   flex-direction: column;
   padding: 0;
   height: 95%;
-  width: 100%
+  width: 100%;
 }
 
-
-h2{
+h2 {
   background-color: aliceblue;
-  padding:2%;
+  padding: 2%;
   text-align: center;
   /* width: 100%; */
 }
 
-h5{
+h5 {
   background-color: azure;
   font-size: large;
   margin: 0;
   text-align: center;
 }
 
-input{
+input {
   font-size: 24px;
   margin: 0px 10px;
 }
 
-label{
+label {
   display: flex;
   font-size: 24px;
   margin: 10px;
 }
 
-Link, a{
+Link,
+a {
   text-decoration: none;
   color: black;
 }
@@ -67,15 +68,15 @@ Link, a{
   /* width: 100%; */
 }
 
-.day{
+.day {
   /* border: navy 3px solid; */
   margin: 1%;
   /* padding: 1%; */
   height: 500px;
-  width: 100px
+  width: 100px;
 }
 
-.event{
+.event {
   background-color: dodgerblue;
   border: 3px solid blue;
   color: aliceblue;
@@ -83,28 +84,28 @@ Link, a{
   margin: 10px 0;
 }
 
-.gridcolumn{
+.gridcolumn {
   padding: 0px;
 }
 
-.column{
+.column {
   border-bottom: 2px solid gray;
   display: grid;
   margin: 0px;
   padding: 20px 0px;
 }
 
-.schedule{
+.schedule {
   background-color: red;
   position: relative;
-  top:-30%;
+  top: -30%;
 }
 
 /* Activities */
-.activities{
+.activities {
   margin-right: 5%;
 }
-.info{
+.info {
   border-radius: 8px;
   /* margin: 10%; */
   padding: 5%;
@@ -113,15 +114,14 @@ Link, a{
   width: 300px;
 }
 
-
-.info-panels{
+.info-panels {
   display: flex;
   justify-content: center;
   /* padding: 2%; */
 }
 
 /* Navbar */
-.navbar{
+.navbar {
   background-color: dodgerblue;
   border: 3px solid dodgerblue;
   color: white;
@@ -130,44 +130,44 @@ Link, a{
   height: 80px;
   margin: 0;
   justify-content: center;
-  width: 100%
+  width: 100%;
 }
 
 /* Schedule Evnet Form */
-.formButton{
+.formButton {
   background-color: dodgerblue;
   border-radius: 10px;
   color: whitesmoke;
-  font-size: 24px;;
+  font-size: 24px;
   /* margin-right: 100px; */
   padding: 10px;
   width: 100px;
 }
 
-.formButtons{
+.formButtons {
   display: flex;
   justify-content: space-evenly;
 }
 
-.scheduleEvent{
+.scheduleEvent {
   border: 3px solid blue;
   background-color: white;
   margin: 50px;
 }
 
-.scheduleExercise{
+.scheduleExercise {
   background-color: lightblue;
   display: grid;
   padding: 10px;
   margin: 10px;
 }
 
-#scheduleTitle{
+#scheduleTitle {
   text-align: center;
-  width:95%;
+  width: 95%;
 }
 
-.time{
+.time {
   display: flex;
   margin: 0;
   padding: 0;

@@ -1,0 +1,86 @@
+.exercise {
+  margin: 0.5rem;
+  margin-top: 20px;
+  /* border: 1rem; */
+  background-color: #4b8eed;
+  border-radius: 31px;
+  box-shadow: inset 0px 4px 4px #00000040;
+  height: 93px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* position: relative; */
+  width: 90%;
+}
+
+.exercise:hover {
+  border: 5px solid rgb(14, 48, 78);
+  transition: all 0.2s ease;
+}
+
+.options {
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transform: translateX(-20%);
+  justify-content: space-between;
+}
+
+.rename {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.rename_container:hover {
+  border-bottom: 3px solid black;
+  transition: all 0.2s ease;
+}
+
+.trash {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.trash_container:hover {
+  border-bottom: 3px solid black;
+  transition: all 0.2s ease;
+}
+
+.exercise .text-wrapper {
+  /* color: #ffffff; */
+  width: 40%;
+  font-family: "Inter-Bold", Helvetica;
+  /* font-size: 36px;
+  font-weight: 700; */
+  font-size: 1.5rem;
+  font-weight: 700;
+  left: 37px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 1rem;
+}
+
+.exercise .text-wrapper:hover {
+  cursor: pointer;
+}
+
+.options button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.stats {
+  text-align: center;
+  margin: 0; /* Reset margin */
+  position: absolute;
+  left: 53%; /* Move the title to the center */
+  transform: translateX(-50%); /* Center the title precisely */
+
+  display: flex;
+  flex-direction: column;
+  /* color: white; */
+}

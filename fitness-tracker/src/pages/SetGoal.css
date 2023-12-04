@@ -1,0 +1,83 @@
+.SetGoal {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container {
+  margin: 20px;
+  width: 80%;
+  background-color: #fff;
+  border: 2px solid #10739e;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 175px;
+  margin-bottom: 10px;
+}
+
+.cancel,
+.submit {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.cancel {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+}
+
+.submit {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+.submit:hover {
+  background-color: #45a049;
+}
+
+.cancel:hover {
+  background-color: #8b1919;
+}

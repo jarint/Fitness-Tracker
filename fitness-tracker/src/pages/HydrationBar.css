@@ -1,0 +1,117 @@
+.SetGoal {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.hydration-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.container {
+  margin: 20px;
+  width: 80%;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #10739e;
+  border-radius: 20px;
+}
+
+div {
+  margin-bottom: 20px;
+}
+
+.label-input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+.total-hydration {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+.dropdown {
+  padding: 0.5em;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+input {
+  padding: 1px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 175px;
+}
+.edit-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+.edit-button {
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.save-button {
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.add-button {
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.remove-button {
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #941414;
+}
+.remove-button:hover {
+  background-color: #45a049;
+}
+.goal-section {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.add-button:active,
+.remove-button:active {
+  background-color: #3e8e41;
+}

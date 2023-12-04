@@ -1,0 +1,113 @@
+/* NutritionPie.css */
+
+.SetGoal {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.rotation-animation {
+  transition: transform 0.3s ease;
+}
+
+.rotate-0 {
+  transform: rotate(0deg);
+}
+
+.rotate-360 {
+  transform: rotate(360deg);
+}
+.back-button {
+  background-color: transparent;
+  color: black;
+  padding: 16px 1px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 0px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+}
+
+.container {
+  width: 80%;
+  margin: 20px;
+}
+
+.nutrition-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-container {
+  display: flex;
+  margin: 10px;
+}
+.total-nutrition {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.item-label {
+  margin-right: 10px;
+}
+
+.dropdown,
+.item-input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.total-nutrition {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-button,
+.remove-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+}
+.add-button{
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+.remove-button{
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+}
+
+.add-button:hover{
+  background-color: #45a049;
+}
+.remove-button:hover {
+  background-color: #8b1919;
+  color: white;
+}
+
+.goal-section {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Add media queries for responsive design if needed */

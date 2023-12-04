@@ -1,0 +1,45 @@
+/* NavigationBar.css */
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #10739e;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.left-section:hover {
+  font-size: 18px;
+}
+
+.left-section {
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.right-section {
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.right-section:hover {
+  font-size: 18px;
+}
+
+.separator {
+  margin: 0 10px;
+  color: white;
+}

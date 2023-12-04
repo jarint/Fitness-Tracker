@@ -1,0 +1,210 @@
+body {
+  background-color: #d0e1f3;
+}
+
+.NutritionalInfo {
+  text-align: center;
+  background-color: #d0e1f3;
+  position: relative;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.hydration-label {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.back-button {
+  background-color: transparent;
+  color: black;
+  padding: 16px 1px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 0px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+}
+
+.hydration-progress {
+  position: relative;
+  background-color: #fff;
+  width: 60px;
+  height: 150px;
+  border-radius: 7px;
+  border: 0px solid #10739e;
+  overflow: hidden;
+  margin-bottom: 0px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.hydration-progress:hover {
+  width: 65px;
+  height: 155px;
+}
+
+.progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background-color: #3e98c7;
+  margin-bottom: 0px;
+  animation: fillAnimation 2s forwards;
+  transition: background-color 0.3s;
+}
+
+.progress-nutrition {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background-color: #3e98c7;
+  margin-bottom: 0px;
+  animation: fillAnimationX 2s forwards;
+  transition: background-color 0.3s;
+}
+
+@keyframes fillAnimationX {
+  0% {
+    height: 0;
+    background-color: #000000;
+  }
+
+  100% {
+    height: var(--nutrition-percentage);
+    background-color: #0f82b3;
+  }
+}
+
+@keyframes fillAnimation {
+  0% {
+    height: 0;
+    background-color: #000000;
+  }
+
+  100% {
+    height: var(--hydration-percentage);
+    background-color: #0f82b3;
+  }
+}
+
+.back-button::before {
+  content: "< ";
+}
+
+.button:focus,
+.button:active {
+  outline: none;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.set-hydration-bar {
+  width: 60px;
+  height: 150px;
+  background-color: white;
+  margin-right: 40px;
+  border-radius: 10px;
+  border: 2px solid #10739e;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.set-hydration-bar:hover {
+  width: 65px;
+  height: 155px;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.nutrition-pie {
+  width: 60px;
+  height: 150px;
+  background-color: white;
+  margin-right: 40px;
+  border-radius: 10px;
+  border: 2px solid #10739e;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.nutrition-pie:hover {
+  width: 65px;
+  height: 155px;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.whitepart {
+  text-align: center;
+  margin: 30px;
+  width: 80%;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #10739e;
+  border-radius: 10px;
+}
+
+.calorie-breakdown {
+  margin-left: -90px;
+  text-align: left;
+  backdrop-filter: blur(10px);
+  display: inline-block;
+}
+
+.set-goal-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: font-size 0.3s ease;
+}
+
+.set-goal-button:hover {
+  background-color: #8b1919;
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 768px) {
+  .info-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hydration-bar {
+    margin-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .App-header {
+    height: auto;
+  }
+
+  .set-goal-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    margin-top: 20px;
+  }
+}

@@ -3,8 +3,10 @@ import './NutritionalInfo.css';
 import SetGoal from './pages/SetGoal';
 import HydrationBar from './pages/HydrationBar';
 import NutritionPie from './pages/NutritionPie';
+import Home from './Homepage';
 
 function NutritionalInfo() {
+  const [goBack, setGoBack] = useState(false);
   const totalHydration = parseInt(localStorage.getItem('totalHydration')) || 0;
   const hydrationGoal = parseInt(localStorage.getItem('hydrationGoal')) || 0;
   const hydrationPercentage = `${Math.round((totalHydration / hydrationGoal) * 100)}%`;
@@ -66,6 +68,12 @@ function NutritionalInfo() {
     return <SetGoal />
   }
 
+  const handleBack = () => {
+    setGoBack(true);
+  };
+  if (goBack) {
+    return <Home />
+  }
   const handleHydrationBarClick = () => {
     setHydrationBar(true);
   };
@@ -92,7 +100,7 @@ function NutritionalInfo() {
         <button
           className="back-button"
           style={{ position: 'absolute', top: 0, left: 10 }}
-          onClick={() => alert('Back button clicked')}
+          onClick={handleBack}
         >
           Back
         </button>

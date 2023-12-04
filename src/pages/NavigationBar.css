@@ -4,7 +4,8 @@
   justify-content: space-between;
   align-items: center;
   background-color: #10739e;
-  padding: 10px;
+  padding: 0px;
+  height: 40px;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -23,12 +24,15 @@
 }
 
 .left-section {
+  margin-bottom: 5px;
   color: white;
   font-size: 16px;
   cursor: pointer;
+  
 }
 
 .right-section {
+  margin-bottom: 5px;
   color: white;
   font-size: 16px;
   cursor: pointer;
@@ -41,5 +45,5 @@
 
 .separator {
   margin: 0 10px;
-  color: white;
+  color: white ;
 }

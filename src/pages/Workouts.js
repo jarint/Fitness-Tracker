@@ -5,6 +5,7 @@ import Exercise from "../Exercise";
 import DatePicker from "../DatePicker";
 import Popup from "../Popup";
 import { useState, useEffect } from "react";
+import NavigationBar from "./NavigationBar";
 
 function Workouts({
   dataByDate,
@@ -41,6 +42,45 @@ function Workouts({
   const [renameOpen, setRenameOpen] = useState(false); //rename popup
   const [addExerciseOpen, setAddExerciseOpen] = useState(false); //addExercise popup
   const [deleteOpen, setDeleteOpen] = useState(false); //delete exercise popup
+
+  function toggleDatePickerStatus() {
+    setDatePickerStatus((currStatus) => !currStatus);
+  }
+
+  function toggleAddExercise() {
+    setAddExerciseOpen((currStatus) => !currStatus);
+    setPopupExercise("");
+    setPopupSets("");
+    setPopupReps("");
+    setPopupError("");
+  }
+
+  function toggleDeleteExercise() {
+    setDeleteOpen((deleteStatus) => !deleteStatus);
+  }
+
+  function toggleRenameExercise() {
+    setRenameOpen((renameStatus) => !renameStatus);
+    setPopupNewName("");
+    setPopupError("");
+  }
+
+  function handleRenameClicked(name) {
+    setExercseBeingLookedAt(name);
+    setRenameOpen(true);
+    //create a state variable to rename active and while rename is active we will display an input form to allow them to change the name
+  }
+
+  function handleDeleteClicked(name) {
+    setExercseBeingLookedAt(name);
+    setDeleteOpen(true);
+  }
+
+  function handleExerciseClicked(name) {
+    setStatsPageExercise(name);
+    console.log(statsPageExercise);
+    navigate("/Stats");
+  }
 
   function saveNewExercise(eDate, eName, eSets, eReps) {
     //add the new exercise and reps to todays date, then add that exercise to all th eother dates with sets = 0 and reps = 0
@@ -104,27 +144,6 @@ function Workouts({
     return exists;
   }
 
-  function toggleDatePickerStatus() {
-    setDatePickerStatus((currStatus) => !currStatus);
-  }
-
-  function handleRenameClicked(name) {
-    setExercseBeingLookedAt(name);
-    setRenameOpen(true);
-    //create a state variable to rename active and while rename is active we will display an input form to allow them to change the name
-  }
-
-  function handleDeleteClicked(name) {
-    setExercseBeingLookedAt(name);
-    setDeleteOpen(true);
-  }
-
-  function handleExerciseClicked(name) {
-    setStatsPageExercise(name);
-    console.log(statsPageExercise);
-    navigate("/Stats");
-  }
-
   function handleDeleteExercise() {
     const name = exerciseBeinglookedAt;
     setExercises((currExercises) =>
@@ -181,24 +200,6 @@ function Workouts({
     } else {
       saveRenamedExercise();
     }
-  }
-
-  function toggleAddExercise() {
-    setAddExerciseOpen((currStatus) => !currStatus);
-    setPopupExercise("");
-    setPopupSets("");
-    setPopupReps("");
-    setPopupError("");
-  }
-
-  function toggleDeleteExercise() {
-    setDeleteOpen((deleteStatus) => !deleteStatus);
-  }
-
-  function toggleRenameExercise() {
-    setRenameOpen((renameStatus) => !renameStatus);
-    setPopupNewName("");
-    setPopupError("");
   }
 
   return (
@@ -319,7 +320,7 @@ function Workouts({
             handleOptionCLicked={handleRenameExercise}
           >
             <div className="popup-new_name">
-              <label>New Name: </label>
+              <label className="w_newname">New Name: </label>
               <input
                 type="text"
                 placeholder="New.."
@@ -336,6 +337,7 @@ function Workouts({
           </Popup>
         ) : null}
       </div>
+      <NavigationBar />
     </div>
   );
 }

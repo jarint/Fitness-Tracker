@@ -1,7 +1,7 @@
 .workouts_container {
   width: 100vw;
   height: 100%;
-  background-color: rgb(156, 198, 236);
+  background-color: #d0e1f3;
 }
 
 .workouts {
@@ -18,6 +18,15 @@
   justify-content: center;
 }
 
+.popup-new_name {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.w_newname {
+  font-weight: bold;
+  transform: translateY(-7px);
+}
 .add_now {
   color: white;
   margin: 100px;
@@ -31,7 +40,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 3px solid rgb(97, 97, 192);
+  border: 3px solid #0f6489;
   padding-bottom: 100px;
 }
 
@@ -41,7 +50,7 @@
   height: 50px;
   width: 200px;
   color: white;
-  background-color: rgb(40, 114, 179);
+  background-color: #10739e;
   font-size: 20px;
   border-radius: 5px;
 }
@@ -55,8 +64,8 @@
 
 .add_btn {
   cursor: pointer;
-  margin-top: 40px;
-  margin-bottom: 1rem;
+  margin-top: 10px;
+  margin-bottom: 60px;
   border-radius: 10px;
   background-color: rgb(119, 185, 22);
   height: 40px;

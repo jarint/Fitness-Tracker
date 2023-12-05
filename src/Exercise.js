@@ -11,29 +11,29 @@ export default function Exercise({
   handleExerciseClicked,
 }) {
   return (
-    <div className="e-exercise">
+    <div className="exercise">
       <div className="text-wrapper" onClick={() => handleExerciseClicked(name)}>
         {name}
       </div>
 
-      <div className="e-stats">
+      <div className="stats">
         <span>Sets:{sets}</span>
         <span>Reps:{reps}</span>
       </div>
 
-      <div className="e-options">
+      <div className="options">
         <button
-          className="e-rename_container"
+          className="rename_container"
           onClick={() => onRenameClicked(name)}
         >
-          <img className="e-rename" alt="Options" src={renameIcon} />
+          <img className="rename" alt="Options" src={renameIcon} />
         </button>
 
         <button
-          className="e-trash_container"
+          className="trash_container"
           onClick={() => onDeleteClicked(name)}
         >
-          <img className="e-trash" alt="Options" src={deleteIcon} />
+          <img className="trash" alt="Options" src={deleteIcon} />
         </button>
       </div>
     </div>

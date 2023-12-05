@@ -2,20 +2,22 @@ import "./App.css";
 import calendar from "./Calendar";
 
 import { Link } from "react-router-dom";
-import NavigationBar from "./pages/NavigationBar";
-
+import NavigationBar from "../src/pages/NavigationBar";
+import Workouts from "./pages/Workouts";
 import NutritionalInfo from "./NutritionalInfo";
 import { useState } from "react";
+
 
 export default function Home() {
   const [goNutritionalInfo, setGoNutritionalInfo] = useState(false);
   const handleTracker = () => {
     setGoNutritionalInfo(true);
-  };
+  }
 
   if (goNutritionalInfo) {
-    return <NutritionalInfo />;
+    return <NutritionalInfo />
   }
+
 
   return (
     <div className="base">
@@ -41,7 +43,9 @@ export default function Home() {
         </div>
 
         <div className="activities">
+
           <div className="info" id="nutrition" onClick={handleTracker}>
+
             <button className="button">
               <h3> Nutrition </h3>
               <h3> Hydration </h3>

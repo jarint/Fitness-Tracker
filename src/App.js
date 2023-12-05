@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Homepage";
 import Schedule from "./Schedule";
 import { useState } from "react";
@@ -17,6 +17,7 @@ function App() {
   return (
     // Add your paths here
     // Moved the home page to a separate file
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/schedule" element={<Schedule />} />
@@ -47,6 +48,7 @@ function App() {
           }
         ></Route>
       </Routes>
+    </BrowserRouter>
   );
 }
 

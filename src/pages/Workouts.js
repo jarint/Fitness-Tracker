@@ -5,6 +5,7 @@ import Exercise from "../Exercise";
 import DatePicker from "../DatePicker";
 import Popup from "../Popup";
 import { useState, useEffect } from "react";
+import NavigationBar from "./NavigationBar";
 
 function Workouts({
   dataByDate,
@@ -336,6 +337,7 @@ function Workouts({
           </Popup>
         ) : null}
       </div>
+      <NavigationBar />
     </div>
   );
 }

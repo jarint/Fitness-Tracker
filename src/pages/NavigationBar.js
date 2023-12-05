@@ -1,16 +1,19 @@
 // NavigationBar.js
-import React from 'react';
-import './NavigationBar.css';
+import React from "react";
+import "./NavigationBar.css";
+import { useNavigate } from "react-router-dom";
 
 const NavigationBar = () => {
+  const navigate = useNavigate();
   const handleHomeClick = () => {
     // Add functionality for the Home button here
-    console.log('Home clicked');
+    navigate("/");
+    console.log("Home clicked");
   };
 
   const handleUserAccountClick = () => {
     // Add functionality for the User Account button here
-    console.log('User Account clicked');
+    console.log("User Account clicked");
   };
 
   return (

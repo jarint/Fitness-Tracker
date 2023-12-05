@@ -145,8 +145,12 @@ const HydrationBar = ({ handleNutritionData }) => {
 
   return (
     <div className="SetGoal">
-      <button className="back-button" onClick={handleBack}>
-        Back
+      <button
+        className="back-utton"
+        style={{ position: 'absolute', top: 0, left: 10 }}
+        onClick={handleBack}
+      >
+        BACK
       </button>
       <h1>Hydration Info</h1>
       <div className="container">

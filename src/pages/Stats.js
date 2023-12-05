@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Topbar from "../Topbar";
+import { Link } from "react-router-dom";
 import "./Stats.css";
 
 const Stats = ({ dataByDate, setDataByDate, statsPageExercise, date }) => {
@@ -49,7 +50,17 @@ const Stats = ({ dataByDate, setDataByDate, statsPageExercise, date }) => {
 
   return (
     <div className="stats_container">
-      <Topbar name="My Stats" back="Workouts" />
+      <Link to="/Workouts">
+        <button
+          className="back-utton"
+          style={{ position: 'absolute', top: 0, left: 10 }}
+
+        >
+          BACK
+        </button>
+      </Link>
+      <h1>My Stats</h1>
+      <br />
       <div className="s_exercise_info_date">{dateString}</div>
 
       <div className="s_exercise_stats">

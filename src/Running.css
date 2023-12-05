@@ -1,0 +1,243 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+#leftBtn{
+  margin: 5px;
+  margin-top: 5px;
+  font-size: .4em;
+  
+}
+
+.cntainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+}
+
+.left {
+  flex: 1.3;
+  background-color: #91bdf3; /* Set your desired color for the left and right rows */
+}
+
+.right {
+  flex: 0.5;
+  background-color: #91bdf3; /* Set your desired color for the left and right rows */
+}
+
+.middle {
+  flex: 1;
+  background-color: #ffffff; /* Set your desired color for the middle row */
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  color: #0f0f0f;
+}
+
+.row{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* Example styles for the elements within the row */
+
+.setgoal-title{
+  margin-top: 80px ;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+}
+.setgoal-input{
+  margin-bottom: 80px ;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+}
+.setdistance-title{
+  margin-top: -70px ;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+}
+.setdistance-input {
+  margin-bottom: 40px ;
+  margin-bottom: -20px; /* Adjust margins as needed */
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+}
+
+.title {
+  font-size: 2em;;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  margin-top: 65px;
+  margin-bottom: -50px;
+  
+}
+
+.subtitle-paused {
+  font-size: 1.5em;
+  color: #ffc107;
+  margin-top: 65px;
+  margin-bottom: -50px;
+}
+
+.subtitle-finished {
+  font-size: 1.5em;
+  margin-top: 65px;
+  margin-bottom: -50px;
+  color: #145516;
+}
+
+button {
+  border-color: #fefefe;
+  border-width: 3px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  text-align: center;
+}
+
+/* Styles for when the input is focused */
+input[type="text"]:focus {
+  border-color: #0088ff9f;
+  box-shadow: 0 0 5px rgb(0, 136, 255);
+}
+
+.setgoal-input {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust the gap between the input fields */
+}
+
+.setgoal-input input[type="text"] {
+  width: 80px; /* Adjust the width for the input fields */
+}
+
+/* Your existing CSS */
+
+/* Styles for Start and Back buttons */
+.start-button,
+.back-button {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 20px 40px; /* Increase padding to make buttons larger */
+  border-radius: 10px; /* Rounded corners for buttons */
+  color: #fff;
+  font-size: 24px; /* Increase font size for better readability */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin: 30px; /* Add some margin between buttons */
+}
+.back-mode {
+  background-color: #0088ff; /* Blue color */
+}
+
+.start-mode {
+  background-color: #4caf50; /* Green color */
+}
+
+.paused-mode {
+  background-color: #ffc107; /* Amber color */
+  width: 300px;
+}
+
+.stop-mode {
+  background-color: #fc5145; /* Red color */
+}
+
+.resume-mode {
+  background-color: #4caf50; /* Green color */
+  width: 300px;
+}
+
+.timer {
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+  padding-bottom: 15px;
+  color: #0f0f0f;
+  font-weight: bold;
+}
+
+.paused-color {
+  color: #ffc107;
+}
+
+.finished-color {
+  color: #76e87a;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 1.2em;
+}
+
+.row.middle {
+  background-image: url('map.png'); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.discard {
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px 20px; /* Increase padding to make buttons larger */
+  border-radius: 10px; /* Rounded corners for buttons */
+  color: #fff;
+  font-size: 24px; /* Increase font size for better readability */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin: 30px; /* Add some margin between buttons */
+  background-color: #f44336; /* Red color */
+  width: 100px;
+}
+
+.save {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 20px 40px; /* Increase padding to make buttons larger */
+  border-radius: 10px; /* Rounded corners for buttons */
+  color: #fff;
+  font-size: 24px; /* Increase font size for better readability */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin: 30px; /* Add some margin between buttons */
+  background-color: #4caf50; /* Green color */
+  width: 300px;
+}

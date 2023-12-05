@@ -5,6 +5,8 @@ import Exercise from "../Exercise";
 import DatePicker from "../DatePicker";
 import Popup from "../Popup";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import NavigationBar from "./NavigationBar";
 
 function Workouts({
   dataByDate,
@@ -204,7 +206,16 @@ function Workouts({
   return (
     <div className="workouts_container">
       <div className="workouts">
-        <Topbar name="My Workouts" back="" />
+        <Link to="/">
+          <button
+            className="back-utton"
+            style={{ position: 'absolute', top: 0, left: 10 }}
+
+          >
+            BACK
+          </button>
+        </Link>
+        <h1>My Workouts</h1>
         {datePickerStatus ? (
           <div className="date">
             <DatePicker
@@ -336,6 +347,7 @@ function Workouts({
           </Popup>
         ) : null}
       </div>
+
     </div>
   );
 }

@@ -3,8 +3,10 @@ import './HydrationBar.css';
 import NavigationBar from './NavigationBar';
 import NutritionalInfo from '../NutritionalInfo';
 import { calculateBreakdown } from './Utils.js';
+import Home from '../Homepage';
 
 const HydrationBar = ({ handleNutritionData }) => {
+  const [goHome, setGoHome] = useState(false);
   const [goBack, setGoBack] = useState(false);
   const hydrationGoal = localStorage.getItem('hydrationGoal') || '0';
   const [showApp, setShowApp] = useState(false);
@@ -69,6 +71,12 @@ const HydrationBar = ({ handleNutritionData }) => {
   const handleBack = () => {
     setGoBack(true);
   };
+  const handleGoHome = () => {
+    setGoHome(true);
+  }
+  if (goHome) {
+    return <Home />;
+  }
 
   const handleEdit = () => {
     setIsEditing(true);
@@ -156,7 +164,9 @@ const HydrationBar = ({ handleNutritionData }) => {
       <div className="container">
         <form onSubmit={handleSubmit}>
           <div className="hydration-form">
-            <h4>Hydration Breakdown:</h4>
+            <br />
+            <h3>Hydration Breakdown:</h3>
+            <br />
             {hydrationItems.map((item, index) => (
               <div key={index} className="item-container">
                 <label className="item-label">
@@ -213,7 +223,9 @@ const HydrationBar = ({ handleNutritionData }) => {
       <div className="goal-section">
         <p>Goal for today: {hydrationGoal} L</p>
       </div>
-      <NavigationBar />
+      <button className="nav" onClick={handleGoHome}>
+        Home
+      </button>
     </div>
   );
 };

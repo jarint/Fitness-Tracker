@@ -14,10 +14,10 @@ export default function Home() {
   const [goNutritionalInfo, setGoNutritionalInfo] = useState(false);
 
 
-  const hydrationPercentage = parseInt(localStorage.getItem('hydrationPercentage')) || "Not set yet";
+  const hydrationPercentage = parseInt(localStorage.getItem('hydrationPercentage')) + "%" || "Not set yet";
 
 
-  const nutritionPercentage = parseInt(localStorage.getItem('nutritionPercentage')) || "Not set yet";
+  const nutritionPercentage = parseInt(localStorage.getItem('nutritionPercentage')) + "%" || "Not set yet";
 
 
 
@@ -49,9 +49,23 @@ export default function Home() {
         <div className="activities">
           <Link to="/Workouts">
             <div className="info" id="workouts">
-              <button className="button">
-                <h3> My Workouts </h3>
-              </button>
+
+              <h3> My Workouts </h3>
+              <div className='workoutList'>
+                Chest Press
+              </div>
+
+              <div className='workoutList'>
+                Leg Press
+              </div>
+              <div className='workoutList'>
+                Calf Raises
+              </div>
+              <div className='workoutList'>
+                Lateral Raises
+              </div>
+
+
             </div>
           </Link>
 
@@ -67,9 +81,10 @@ export default function Home() {
           <div className="info" id="nutrition" onClick={handleTracker}>
             <h3>Goals: </h3>
             <br />
-            Hydration: <b>{hydrationPercentage}%</b>
+            Hydration: <b>{hydrationPercentage}</b>
             <br />
-            Nutrition:  <b> {nutritionPercentage}%</b>
+            <br />
+            Nutrition:  <b> {nutritionPercentage}</b>
 
 
 
@@ -77,7 +92,7 @@ export default function Home() {
         </div>
       </div>
 
-      <NavigationBar />
+
     </div>
   );
 }

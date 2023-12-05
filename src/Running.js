@@ -190,7 +190,7 @@ function Running() {
             <button className='save' onClick={handleSave}>SAVE</button>
           </>)}
       </div>
-      <NavigationBar />
+
 
     </div>
   );

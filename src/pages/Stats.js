@@ -125,6 +125,7 @@ const Stats = ({ dataByDate, setDataByDate, statsPageExercise, date }) => {
           </button>
         </div>
       </div>
+
     </div>
   );
 };

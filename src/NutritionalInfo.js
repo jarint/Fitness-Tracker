@@ -106,6 +106,7 @@ function NutritionalInfo() {
         >
           BACK
         </button>
+        <br />
         <div>
           {showDatePicker ? (
             <input type="date" value={selectedDate} onChange={handleDateChange} />
@@ -139,7 +140,9 @@ function NutritionalInfo() {
 
         <div className="whitepart">
           <div className="calorie-breakdown">
-            <h3>Calorie Breakdown:</h3>
+            <br />
+            <h3 >Breakdown:</h3>
+            <br />
             <h5><p>Calories: {calorieBreakdown.calories ? calorieBreakdown.calories.toFixed(1) : 0} calories</p></h5>
             <h6>
               {calorieBreakdown && (

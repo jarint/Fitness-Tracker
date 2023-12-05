@@ -49,7 +49,14 @@ label {
   font-size: 24px;
   margin: 10px;
 }
-
+.workoutList{
+  margin-top: 4px;
+background-color: #10739e;
+border-radius: 5px;
+padding: 2px;
+margin-bottom:5px;
+color: aliceblue;
+}
 Link,
 a {
   text-decoration: none;
@@ -118,9 +125,16 @@ a {
   margin-right : 5px;
   padding: 5%;
   border: #10739e 2px solid;
-  height: 100px;
+  height: 140px;
   width: 200px;
   cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+}
+.info:hover{
+  height: 145px;
+  width: 205px;
+  transition: all 0.1s ease-in;
+  font-size: 1.1em;
 }
 .info2{
 
@@ -134,8 +148,16 @@ a {
   height: 100px;
   width: 200px;
   cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
 
 }
+.info2:hover{
+  height: 105px;
+  width: 205px;
+  transition: all 0.1s ease-in;
+  font-size: 1.1em;
+}
+
 
 .info-panels {
   display: flex;

@@ -1,12 +1,9 @@
 // NavigationBar.js
-import React from 'react';
+import React, { useState } from 'react';
+import Home from '../Homepage';
 import './NavigationBar.css';
 
 const NavigationBar = () => {
-  const handleHomeClick = () => {
-    // Add functionality for the Home button here
-    console.log('Home clicked');
-  };
 
   const handleUserAccountClick = () => {
     // Add functionality for the User Account button here
@@ -15,13 +12,10 @@ const NavigationBar = () => {
 
   return (
     <nav className="navigation-bar">
-      <div className="left-section" onClick={handleHomeClick}>
+      <div className="left-section" >
         Home
       </div>
-      <span className="separator">|</span>
-      <div className="right-section" onClick={handleUserAccountClick}>
-        User Account
-      </div>
+
     </nav>
   );
 };

@@ -57,7 +57,6 @@ export default function Schedule() {
 
       </div>
 
-      <NavigationBar />
 
     </div>
 

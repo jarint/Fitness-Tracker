@@ -195,6 +195,18 @@ p{
   padding: 10px;
   margin: 10px;
 }
+#submit{
+  background-color: #4caf50;
+}
+#submit:hover{
+  background-color: #45a049;
+}
+#cancel{
+  background-color: #ff0000;
+}
+#cancel:hover{
+  background-color: #941414;
+}
 
 #scheduleTitle {
   text-align: center;

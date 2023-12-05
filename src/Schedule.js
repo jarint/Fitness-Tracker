@@ -47,9 +47,9 @@ export default function Schedule() {
           <div className='formButtons'>
             {/* <Link to="/"><button className='formButton' type='submit'>Save</button></Link>
               <br></br> */}
-            <button className='formButton' type='submit'>Save</button>
+            <button className='formButton' id='submit' type='submit'>Save</button>
 
-            <Link to="/"><button className='formButton'>Cancel</button></Link>
+            <Link to="/"><button className='formButton' id='cancel'>Cancel</button></Link>
           </div>
         </form>
 

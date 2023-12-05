@@ -2,7 +2,7 @@ import "./App.css";
 import calendar from "./Calendar";
 
 import { Link } from "react-router-dom";
-import NavigationBar from "../src/pages/NavigationBar";
+import NavigationBar from "./pages/NavigationBar";
 
 import NutritionalInfo from "./NutritionalInfo";
 import { useState } from "react";

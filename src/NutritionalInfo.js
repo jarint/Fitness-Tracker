@@ -125,7 +125,8 @@ function NutritionalInfo() {
                 style={{ height: `${hydrationPercentage}` }}
               ></div>
             </div>
-            <div className="hydration-label">{hydrationPercentage}</div>
+            <div className="hydration-label">Hydration<br />
+              {hydrationPercentage}</div>
           </div>
           <div className="nutrition-pie" onClick={handleNutritionPieClick}>
             <div className="hydration-progress">
@@ -134,7 +135,8 @@ function NutritionalInfo() {
                 style={{ height: `${nutritionPercentage}` }}
               ></div>
             </div>
-            <div className="hydration-label">{nutritionPercentage} </div>
+            <div className="hydration-label">Nutrition <br />
+              {nutritionPercentage} </div>
           </div>
         </div>
 

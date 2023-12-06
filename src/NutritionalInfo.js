@@ -106,7 +106,7 @@ function NutritionalInfo() {
         >
           BACK
         </button>
-        <br />
+
         <div>
           {showDatePicker ? (
             <input type="date" value={selectedDate} onChange={handleDateChange} />

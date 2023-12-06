@@ -21,12 +21,14 @@
   transition: all 0.2s ease;
 }
 
-.options {
+.optionsx {
+  margin-right: 10px;
   width: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  transform: translateX(-20%);
+
+  transform: translateY(+45%);
   justify-content: space-between;
 }
 
@@ -53,6 +55,7 @@
 .exercise .text-wrapper {
   /* color: #ffffff; */
   width: 30%;
+  transform: translateY(+5%);
 
   /* 
   font-weight: 700; */
@@ -69,7 +72,7 @@
   cursor: pointer;
 }
 
-.options button {
+.optionsx button {
   cursor: pointer;
   background: none;
   border: none;

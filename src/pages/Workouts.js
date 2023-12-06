@@ -2,13 +2,13 @@
 
 import "./Workouts.css";
 import { useNavigate } from "react-router-dom";
-import Topbar from "../Topbar";
+
 import Exercise from "../Exercise";
 import DatePicker from "../DatePicker";
 import Popup from "../Popup";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import NavigationBar from "./NavigationBar";
+import B_Back_arrow from "../icons/back_arrow.svg";
 
 function Workouts({
   dataByDate,
@@ -208,15 +208,22 @@ function Workouts({
   return (
     <div className="workouts_container">
       <div className="workouts">
-        <Link to="/">
-          <button
-            className="back-utton"
+        <Link className="link_back" to="/">
+          {/* <button
+            className="back-button2"
             style={{ position: "absolute", top: 0, left: 10 }}
           >
             BACK
-          </button>
+          </button> */}
+          <img
+            className="w_back_btn"
+            src={B_Back_arrow}
+            // style={{ position: "absolute", top: 0, left: 10 }}
+            alt="Previous Page"
+          />
+          <h1>My Workouts</h1>
         </Link>
-        <h1>My Workouts</h1>
+
         {datePickerStatus ? (
           <div className="date">
             <DatePicker
@@ -263,6 +270,8 @@ function Workouts({
               <div className="popup-exercise">
                 <label>Exercise: </label>
                 <input
+                  id="popupexerciseinput"
+                  size="0"
                   type="text"
                   placeholder="Exercise.."
                   value={popupExercise}
@@ -288,7 +297,7 @@ function Workouts({
               <div className="popup-stat">
                 <label>Reps:</label>
                 <input
-                  className="stat_input"
+                  className="stat_input2"
                   type="text"
                   placeholder="0"
                   maxLength={3}
@@ -318,7 +327,9 @@ function Workouts({
                 Are you sure you want to delete your {exerciseBeinglookedAt}{" "}
                 exercise?
               </p>{" "}
-              <p style={{ color: "red" }}>All related Data will be lost!</p>
+              <p style={{ color: "red" }}>
+                All related Data from other days will be lost!
+              </p>
             </div>
           </Popup>
         ) : null}
@@ -331,7 +342,7 @@ function Workouts({
             handleOptionCLicked={handleRenameExercise}
           >
             <div className="popup-new_name">
-              <label>New Name: </label>
+              <label className="newNameLabel">New Name </label>
               <input
                 type="text"
                 placeholder="New.."

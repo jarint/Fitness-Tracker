@@ -1,17 +1,30 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation, useNavigate} from 'react-router-dom'
+import { useState } from 'react';
 import './App.css'
 import calendar from './Calendar'
+
+import {updateEvent, displayEvents} from './Calendar'
 
 import NavigationBar from './pages/NavigationBar';
 
 export default function Schedule() {
-  function handleSubmit(e) {
+  let params = useLocation();
+  let navigate = useNavigate();
+
+  function HandleSubmit(e) {
     e.preventDefault();
 
     const form = e.target;
     const formData = new FormData(form);
     const formJson = Object.fromEntries(formData.entries());
-    console.log(formJson);
+    updateEvent(params.state, formJson, true);
+  
+    const routeChange = () =>{
+      let path = `/`;
+      navigate(path)
+    }
+    
+    routeChange();
   }
 
   return (
@@ -23,18 +36,20 @@ export default function Schedule() {
 
       {calendar()}
 
+      {displayEvents(params.state)}
+
 
       <div className='scheduleEvent'>
-        <h2 id='scheduleTitle'> Schedule an Event</h2>
-        <form className='scheduleExercise' onSubmit={handleSubmit}>
+        <h2 id='scheduleTitle'> Add an Event</h2>
+        <form className='scheduleExercise' onSubmit={HandleSubmit}>
           <label className='label'>
             Event Name
-            <input type="text" name="eventTitle" className='formInput'></input>
+            <input type="text" name="eventName" className='formInput'></input>
           </label>
 
-          <label className='label'>Exercise Name
+          {/* <label className='label'>Exercise Name
             <input type="text" name="exerciseName" className='formInput'></input>
-          </label>
+          </label> */}
 
           <label className='label'>Time
             <div className='time'>
@@ -45,8 +60,8 @@ export default function Schedule() {
           </label>
 
           <div className='formButtons'>
-            {/* <Link to="/"><button className='formButton' type='submit'>Save</button></Link>
-              <br></br> */}
+            {/* <Link to="/"><button className='formButton' type='submit'>Save</button></Link> */}
+              <br></br>
             <button className='formButton' id='submit' type='submit'>Save</button>
 
             <Link to="/"><button className='formButton' id='cancel'>Cancel</button></Link>

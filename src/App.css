@@ -18,7 +18,7 @@ button.dayEvent {
   display: flex;
   flex-direction: column;
   padding: 2px;
-  height: 95%;
+  min-height: 95%;
   width: 100%;
 }
 
@@ -66,26 +66,55 @@ a {
   border-radius: 8px;
   display: flex;
   justify-content: center;
-   width: 100%; 
+  width: 100%; 
+  overflow: scroll;
 }
 
 .day {
   /* border: navy 3px solid; */
   margin: 1%;
   /* padding: 1%; */
-  height: 300px;
-  width: 67px;
+  height: 500px;
+  width: 100px;
 }
 
 .event {
   background-color: #10739e;
   border: 2px solid rgb(22, 22, 136);
   color: rgb(255, 255, 255);
-  font-size: 0.8em;
+  font-size: 18px;
+  /* font-weight: bold; */
   margin: 10px 0;
   border-radius: 3px;
 }
 
+.eventsList{
+  align-items: center;
+  border: 2px solid #10739e;
+  border-radius: 5px;
+  background-color: white;
+  border: 3px solid darkblue;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  /* width: 95%; */
+}
+
+.eventListItem{
+  align-items: center;
+  background-color: lightblue;
+  border: 2px solid rgb(22, 22, 136);
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  /* margin: 10px 200px; */
+  padding: 10px;  
+  /* width:300px; */
+}
+
+#eventOptions{
+  padding-left:100px;
+}
 .gridcolumn {
   padding: 0px;
 }
@@ -170,11 +199,13 @@ a {
 }
 
 .scheduleEvent {
+  align-items: center;
   border: 2px solid #10739e;
   border-radius: 5px;
   background-color: white;
+  justify-content: center;
   margin: 15px;
-  margin-top: -40px;
+  /* margin-top: -40px; */
  
 }
 .label{

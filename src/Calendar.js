@@ -4,18 +4,9 @@ import Popup from "./Popup";
 import renameIcon from "./icons/rename.png";
 import deleteIcon from "./icons/trash3.svg";
 
-// const week = [
-//   {"Sunday": sunday}, 
-//   {"Monday": monday},
-//   {"Tuesday": tuesday}, 
-//   {"Wednesday" :wednesday},
-//   {"Thursday": thursday}, 
-//   {"Friday":friday},
-//   {"Saturday":saturday}];
-
 var sunday = [
   { startTime: "09:00", endTime:"10:00", eventName: "Jogging"},
-  { startTime: "10:00", endTime:"10:30", eventName: "Walk"},
+  { startTime: "10:00", endTime:"10:30", eventName: "Yoga"},
   { startTime: "12:00", endTime: "13:00", eventName: "Dance Class"},
 ]
 
@@ -27,22 +18,21 @@ var monday = [
 var tuesday = [
 ]
 
-const wednesday= [
-  // { startTime: "09:00", endTime:"10:00", eventName: "Jogging"},
+var wednesday= [
   { startTime: "12:00", endTime:"12:30", eventName: "Dance Class"},
 ]
 
-const thursday = [
+var thursday = [
   { startTime: "09:00", endTime:"10:00", eventName: "Jogging"},
   // { startTime: "12:00", endTime:"12:30", eventName: "Dance Class"},
 ]
 
-const friday = [
+var friday = [
   // { startTime: "09:00", endTime:"10:00", eventName: "Jogging"},
   { startTime: "12:00", endTime:"12:30", eventName: "Dance Class"},
 ]
 
-const saturday = [
+var saturday = [
   { startTime: "09:00", endTime:"10:00", eventName: "Jogging"},
   // { startTime: "12:00", endTime:"12:30", eventName: "Dance Class"},
 ]
@@ -168,9 +158,7 @@ export function updateEvent(dayName, formJson, addEvent){
       objLength = sunday.length;
       if (!addEvent){
         sunday = formJson;
-        console.log("Sunday",sunday);
-        calendar();
-        return;
+        break;
       }
       sunday[objLength]= 
       { startTime: formJson.startTime , 
@@ -180,6 +168,10 @@ export function updateEvent(dayName, formJson, addEvent){
       
     case "Monday":
       objLength = monday.length;
+      if (!addEvent){
+        monday = formJson;
+        break;
+      }
       monday[objLength]= 
       { startTime: formJson.startTime , 
         endTime: formJson.endTime, 
@@ -188,6 +180,10 @@ export function updateEvent(dayName, formJson, addEvent){
       break;
 
     case "Tuesday":
+      if (!addEvent){
+        tuesday = formJson;
+        break;
+      }
       objLength = tuesday.length;
       tuesday[objLength]= 
       { startTime: formJson.startTime , 
@@ -196,6 +192,10 @@ export function updateEvent(dayName, formJson, addEvent){
       break;
 
     case "Wednesday":
+      if (!addEvent){
+        wednesday = formJson;
+        break;
+      }
       objLength = wednesday.length;
       wednesday[objLength]= 
       { startTime: formJson.startTime , 
@@ -205,6 +205,10 @@ export function updateEvent(dayName, formJson, addEvent){
       break;
 
     case "Thursday":
+      if (!addEvent){
+        thursday = formJson;
+        break;
+      }
       objLength = thursday.length;
       thursday[objLength]= 
       { startTime: formJson.startTime , 
@@ -214,6 +218,10 @@ export function updateEvent(dayName, formJson, addEvent){
       break;
 
     case "Friday":
+      if (!addEvent){
+        friday = formJson;
+        break;
+      }
       objLength = friday.length;
       friday[objLength]= 
       { startTime: formJson.startTime , 
@@ -223,6 +231,10 @@ export function updateEvent(dayName, formJson, addEvent){
       break;
 
     case "Saturday":
+      if (!addEvent){
+        saturday = formJson;
+        break;
+      }
       objLength = saturday.length;
       saturday[objLength]= 
       { startTime: formJson.startTime , 

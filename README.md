@@ -11,7 +11,7 @@ Harsh Patil (30125049)
 ## Running Instructions (For devs hosting locally)
 1. Clone this repository
 2. Install node.js and npm
-3. Install node-modules with \code{npm install}
+3. Install node-modules with 'npm install'
 4. Run command 'npm start'
 
 ## Running instructions (For evaluators and everyone else)

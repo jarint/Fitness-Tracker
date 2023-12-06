@@ -70,9 +70,14 @@ export default function Home() {
           </Link>
 
           <div className="info2" id="time-active" onClick={handleTimeActiveClick}>
-            <button className="button" id="time-active">
-              <h3> Time Active </h3>
-            </button>
+
+            <h3> Time Active </h3>
+            <br />
+            <div className='tik'>
+              <div className='t'>00:00:00</div>
+            </div>
+
+
           </div>
 
         </div>

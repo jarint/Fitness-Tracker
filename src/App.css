@@ -248,3 +248,19 @@ p{
   margin: 0;
   padding: 0;
 }
+
+.tik{
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 50px;
+font-size: 2em;
+border-radius: 8px;
+}
+.t{
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  padding: 18%;
+}

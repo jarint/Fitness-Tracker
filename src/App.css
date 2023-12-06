@@ -3,7 +3,7 @@
   .container {
     padding: 10px;
   }
-  
+
 }
 
 body {
@@ -26,7 +26,7 @@ h2 {
   background-color: aliceblue;
   padding: 2%;
   text-align: center;
-  width: 100%; 
+  width: 100%;
 }
 
 h5 {
@@ -35,7 +35,8 @@ h5 {
   margin: 0;
   text-align: center;
 }
-h3{
+
+h3 {
   margin: 0;
 }
 
@@ -49,14 +50,16 @@ label {
   font-size: 24px;
   margin: 10px;
 }
-.workoutList{
+
+.workoutList {
   margin-top: 4px;
-background-color: #10739e;
-border-radius: 5px;
-padding: 2px;
-margin-bottom:5px;
-color: aliceblue;
+  background-color: #10739e;
+  border-radius: 5px;
+  padding: 2px;
+  margin-bottom: 5px;
+  color: aliceblue;
 }
+
 Link,
 a {
   text-decoration: none;
@@ -76,7 +79,7 @@ a {
   border-radius: 8px;
   display: flex;
   justify-content: center;
-  width: 100%; 
+  width: 100%;
   overflow: scroll;
 }
 
@@ -98,7 +101,7 @@ a {
   border-radius: 3px;
 }
 
-.eventsList{
+.eventsList {
   align-items: center;
   border: 2px solid #10739e;
   border-radius: 5px;
@@ -110,7 +113,7 @@ a {
   /* width: 95%; */
 }
 
-.eventListItem{
+.eventListItem {
   align-items: center;
   background-color: lightblue;
   border: 2px solid rgb(22, 22, 136);
@@ -118,13 +121,14 @@ a {
   font-size: 18px;
   justify-content: center;
   /* margin: 10px 200px; */
-  padding: 10px;  
+  padding: 10px;
   /* width:300px; */
 }
 
-#eventOptions{
-  padding-left:100px;
+#eventOptions {
+  padding-left: 100px;
 }
+
 .gridcolumn {
   padding: 0px;
 }
@@ -146,12 +150,13 @@ a {
 .activities {
   margin-right: 5%;
 }
+
 .info {
   background-color: lightblue;
   border-radius: 7px;
   margin-top: -50px;
-  margin-left : 5px;
-  margin-right : 5px;
+  margin-left: 5px;
+  margin-right: 5px;
   padding: 5%;
   border: #10739e 2px solid;
   height: 140px;
@@ -159,19 +164,21 @@ a {
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
 }
-.info:hover{
+
+.info:hover {
   height: 145px;
   width: 205px;
   transition: all 0.1s ease-in;
   font-size: 1.1em;
 }
-.info2{
+
+.info2 {
 
   background-color: lightblue;
   border-radius: 7px;
   margin-top: -5px;
-  margin-left : 5px;
-  margin-right : 5px;
+  margin-left: 5px;
+  margin-right: 5px;
   padding: 5%;
   border: #10739e 2px solid;
   height: 100px;
@@ -180,7 +187,8 @@ a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
 
 }
-.info2:hover{
+
+.info2:hover {
   height: 105px;
   width: 205px;
   transition: all 0.1s ease-in;
@@ -191,7 +199,7 @@ a {
 .info-panels {
   display: flex;
   justify-content: center;
-   padding: 2%; 
+  padding: 2%;
 }
 
 /* Navbar */
@@ -231,36 +239,44 @@ a {
   justify-content: center;
   margin: 15px;
   /* margin-top: -40px; */
- 
+
 }
-.label{
-  margin:5px;
+
+.label {
+  margin: 5px;
   font-size: .2em;
 }
-.formInput{
-font-size: 1em;
-height: 17px;
-width: 150px;
+
+.formInput {
+  font-size: 1em;
+  height: 17px;
+  width: 150px;
 }
-p{
+
+p {
   margin-top: -1px
 }
+
 .scheduleExercise {
   background-color: lightblue;
   display: grid;
   padding: 10px;
   margin: 10px;
 }
-#submit{
+
+#submit {
   background-color: #4caf50;
 }
-#submit:hover{
+
+#submit:hover {
   background-color: #45a049;
 }
-#cancel{
+
+#cancel {
   background-color: #fc5145;
 }
-#cancel:hover{
+
+#cancel:hover {
   background-color: #941414;
 }
 
@@ -268,28 +284,31 @@ p{
   text-align: center;
   width: 95%;
 }
-.button{
+
+.button {
   background-color: lightblue;
   border: 0px;
-  margin-top:-10px;
-  
+  margin-top: -10px;
+
 }
+
 .time {
   display: flex;
   margin: 0;
   padding: 0;
 }
 
-.tik{
+.tik {
   display: flex;
   align-items: center;
   background-color: black;
   color: white;
   height: 50px;
-font-size: 2em;
-border-radius: 8px;
+  font-size: 2em;
+  border-radius: 8px;
 }
-.t{
+
+.t {
   display: flex;
   align-items: center;
   margin-top: 15px;

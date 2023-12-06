@@ -21,19 +21,22 @@ body {
   color: #333;
 }
 
-.back-button {
-  background-color: transparent;
-  color: black;
+.back-utton {
+  background-color: #0088ff;
+  color: rgb(255, 255, 255);
   padding: 16px 1px;
   text-align: center;
-  text-decoration: none;
+  
   display: inline-block;
   font-size: 16px;
-  margin: 4px 0px;
+
+  font-size: .4em;
   cursor: pointer;
   border: none;
-  border-radius: 12px;
+  border-radius: 8px;
+  width: 60px;
 }
+
 
 .hydration-progress {
   position: relative;
@@ -102,7 +105,7 @@ body {
 }
 
 .back-button::before {
-  content: "< ";
+  content: "";
 }
 
 .button:focus,

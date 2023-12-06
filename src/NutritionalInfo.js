@@ -10,6 +10,7 @@ function NutritionalInfo() {
   const totalHydration = parseInt(localStorage.getItem('totalHydration')) || 0;
   const hydrationGoal = parseInt(localStorage.getItem('hydrationGoal')) || 0;
   const hydrationPercentage = `${Math.round((totalHydration / hydrationGoal) * 100)}%`;
+  localStorage.setItem('hydrationPercentage', hydrationPercentage);
 
   const totalNutrition = parseInt(localStorage.getItem('totalNutrition')) || 0;
   const nutritionGoal = parseInt(localStorage.getItem('nutritionGoal')) || 0;
@@ -91,6 +92,7 @@ function NutritionalInfo() {
   }
 
   const nutritionPercentage = `${Math.round((calorieBreakdown.calories / nutritionGoal) * 100)}%`;
+  localStorage.setItem('nutritionPercentage', nutritionPercentage);
   document.documentElement.style.setProperty('--nutrition-percentage', nutritionPercentage);
 
   return (
@@ -98,12 +100,13 @@ function NutritionalInfo() {
       <header className="NutritionalInfo-header">
         <h1>Nutrition Info</h1>
         <button
-          className="back-button"
+          className="back-utton"
           style={{ position: 'absolute', top: 0, left: 10 }}
           onClick={handleBack}
         >
-          Back
+          BACK
         </button>
+        <br />
         <div>
           {showDatePicker ? (
             <input type="date" value={selectedDate} onChange={handleDateChange} />
@@ -137,7 +140,9 @@ function NutritionalInfo() {
 
         <div className="whitepart">
           <div className="calorie-breakdown">
-            <h3>Calorie Breakdown:</h3>
+            <br />
+            <h3 >Breakdown:</h3>
+            <br />
             <h5><p>Calories: {calorieBreakdown.calories ? calorieBreakdown.calories.toFixed(1) : 0} calories</p></h5>
             <h6>
               {calorieBreakdown && (

@@ -6,10 +6,29 @@ import NavigationBar from "../src/pages/NavigationBar";
 import Workouts from "./pages/Workouts";
 import NutritionalInfo from "./NutritionalInfo";
 import { useState } from "react";
+import Running from "./Running";
 
 
 export default function Home() {
+  const [showTimeActive, setShowTimeActive] = useState(false);
   const [goNutritionalInfo, setGoNutritionalInfo] = useState(false);
+
+
+  const hydrationPercentage = parseInt(localStorage.getItem('hydrationPercentage')) + "%" || "Not set yet";
+
+
+  const nutritionPercentage = parseInt(localStorage.getItem('nutritionPercentage')) + "%" || "Not set yet";
+
+
+
+
+  const handleTimeActiveClick = () => {
+    setShowTimeActive(true);
+  }
+  if (showTimeActive) {
+    return <Running />
+  }
+
   const handleTracker = () => {
     setGoNutritionalInfo(true);
   }
@@ -30,31 +49,55 @@ export default function Home() {
         <div className="activities">
           <Link to="/Workouts">
             <div className="info" id="workouts">
-              <button className="button">
-                <h3> My Workouts </h3>
-              </button>
+
+              <h3> My Workouts </h3>
+              <div className='workoutList'>
+                Chest Press
+              </div>
+
+              <div className='workoutList'>
+                Leg Press
+              </div>
+              <div className='workoutList'>
+                Calf Raises
+              </div>
+              <div className='workoutList'>
+                Lateral Raises
+              </div>
+
+
             </div>
           </Link>
-          <div className="info2" id="time-active">
-            <button className="button" id="time-active">
-              <h3> Time Active </h3>
-            </button>
+
+          <div className="info2" id="time-active" onClick={handleTimeActiveClick}>
+
+            <h3> Time Active </h3>
+            <br />
+            <div className='tik'>
+              <div className='t'>00:00:00</div>
+            </div>
+
+
           </div>
+
         </div>
 
         <div className="activities">
-
           <div className="info" id="nutrition" onClick={handleTracker}>
+            <h3>Goals: </h3>
+            <br />
+            Hydration: <b>{hydrationPercentage}</b>
+            <br />
+            <br />
+            Nutrition:  <b> {nutritionPercentage}</b>
 
-            <button className="button">
-              <h3> Nutrition </h3>
-              <h3> Hydration </h3>
-            </button>
+
+
           </div>
         </div>
       </div>
 
-      <NavigationBar />
+
     </div>
   );
 }

@@ -23,46 +23,48 @@
 }
 
 .s_exercise_stats {
+  margin-left: -20px;
   margin-top: 30px;
   margin-bottom: 30px;
   font-weight: bold;
   font-size: 30px;
   width: 80%;
   /* height: 90%; */
-  height: 1324px;
+  height: 800px;
   background-color: white;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 8%;
+  gap: 5%;
   align-items: center;
   border: 3px solid rgb(97, 97, 192);
 }
 
 .s_exercise_name {
   margin-top: 10px;
-  font-size: 40px;
+  font-size: 24px;
+  margin-bottom: -20px;
 }
 .s_weight_input {
-  height: 40px;
-  width: 50px;
+  height: 20px;
+  width: 10px;
   font-size: 20px;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 .s_set_input {
-  height: 40px;
-  width: 50px;
+  height: 20px;
+  width: 10px;
   font-size: 20px;
-  margin-left: 45px;
+  margin-left: 10px;
 }
 
 .s_rep_input {
-  height: 40px;
-  width: 50px;
+  height: 20px;
+  width: 10px;
   font-size: 20px;
-  margin-left: 40px;
+  margin-left: 10px;
 }
 
 .s_notes_input {
@@ -75,10 +77,16 @@
   max-height: 150px; /* Set the maximum height */
   resize: both; /* Allow vertical resizing (can be 'none', 'both', 'horizontal')*/
 }
+label{
+  font-size: 16px;
+  margin-left: -5px;
+  
+}
 
 .s_weight_stat {
   width: 70%;
   display: flex;
+  
 }
 
 .s_notes_stat {
@@ -98,7 +106,7 @@
 }
 .s_buttons {
   position: relative; /* Position the footer */
-  bottom: 20px; /* Adjust bottom spacing as needed */
+  bottom: 160px; /* Adjust bottom spacing as needed */
   margin-top: auto;
 
   width: 70%;

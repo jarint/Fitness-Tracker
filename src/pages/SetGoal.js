@@ -64,7 +64,7 @@ const SetGoal = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Alert with saving and go back to NutritionalInfo
-    alert('Changes saved. Going back to the main app.');
+
     localStorage.setItem('nutritionGoal', nutritionGoal);
     localStorage.setItem('hydrationGoal', hydrationGoal);
     setShowApp(true);
@@ -78,11 +78,11 @@ const SetGoal = () => {
     <div className="SetGoal">
       <h1>Set Goal</h1>
       <button
-        className="back-button"
-        style={{ position: 'absolute', top: 10, left: 10 }}
+        className="back-utton"
+        style={{ position: 'absolute', top: 0, left: 10 }}
         onClick={handleBack}
       >
-        Back
+        BACK
       </button>
       <div className="container">
         <form onSubmit={handleSubmit}>

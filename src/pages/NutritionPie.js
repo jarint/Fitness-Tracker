@@ -12,7 +12,7 @@ const NutritionPie = ({ handleNutritionData }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [isAddRemoveVisible, setIsAddRemoveVisible] = useState(false);
   const nutritionGoal = localStorage.getItem('nutritionGoal') || '0';
-  const nutritionOptions = ['Please Choose', 'Rice', 'Chicken', 'Peas', 'Almonds', 'Milk', 'Broccoli', 'Bananas', 'Salmon', 'Greek Yogurt', 'Eggs', 'Quinoa', 'Sweet Potatoes'];
+  const nutritionOptions = ['Please Choose', 'Rice', 'Chicken', 'Peas', 'Almonds', 'Milk', 'Broccoli', 'Bananas', 'Salmon', 'Yogurt', 'Eggs', 'Quinoa', 'Potatoes'];
 
   const [nutritionItems, setNutritionItems] = useState(
     JSON.parse(localStorage.getItem('nutritionItems')) || [

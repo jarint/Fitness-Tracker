@@ -2,10 +2,10 @@
 Group Project for CPSC 481 - Human Computer Interactions
 
 ## Contributors
-Jarin Thundathil (10149776) 
-Abdullah Mehedi (30154770) 
-Melanie Nguyen (30085836) 
-David Oti-George (30141134) 
+Jarin Thundathil (10149776)  
+Abdullah Mehedi (30154770)  
+Melanie Nguyen (30085836)  
+David Oti-George (30141134)  
 Harsh Patil (30125049)
 
 ## Running Instructions (For devs hosting locally)

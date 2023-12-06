@@ -61,7 +61,7 @@ function Running() {
       setIsFinished(true);
     } else {
       // Redirect to the homepage
-      window.location.href = '/';
+      window.location.href = '/fitness-tracker';
     }
   };
 

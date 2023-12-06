@@ -13,7 +13,7 @@
 }
 
 .s_exercise_info_date {
-  margin-top: 10px;
+  margin-top: -25px;
   margin-bottom: -10px;
   height: 40px;
   width: 250px;
@@ -108,7 +108,7 @@ label {
 }
 .s_buttons {
   position: relative; /* Position the footer */
-  bottom: 70px; /* Adjust bottom spacing as needed */
+  bottom: 40px; /* Adjust bottom spacing as needed */
   margin-top: auto;
 
   width: 70%;

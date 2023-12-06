@@ -21,7 +21,7 @@ export default function Exercise({
         <span>Reps:{reps}</span>
       </div>
 
-      <div className="options">
+      <div className="optionsx">
         <button
           className="rename_container"
           onClick={() => onRenameClicked(name)}

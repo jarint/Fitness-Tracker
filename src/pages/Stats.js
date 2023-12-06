@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Topbar from "../Topbar";
 import { Link } from "react-router-dom";
 import "./Stats.css";
+import B_Back_arrow from "../icons/back_arrow.svg";
 
 const Stats = ({ dataByDate, setDataByDate, statsPageExercise, date }) => {
   const [weight, setWeight] = useState("");
@@ -51,15 +51,21 @@ const Stats = ({ dataByDate, setDataByDate, statsPageExercise, date }) => {
   return (
     <div className="stats_container">
       <Link to="/Workouts">
-        <button
+        {/* <button
           className="back-utton"
-          style={{ position: 'absolute', top: 0, left: 10 }}
-
+          style={{ position: "absolute", top: 0, left: 10 }}
         >
           BACK
-        </button>
+        </button> */}
+        <img
+          className="w_back_btn"
+          src={B_Back_arrow}
+          // style={{ position: "absolute", top: 0, left: 10 }}
+          alt="Previous Page"
+        />
+        <h1>My Stats</h1>
       </Link>
-      <h1>My Stats</h1>
+      {/* <h1>My Stats</h1> */}
       <br />
       <div className="s_exercise_info_date">{dateString}</div>
 
@@ -125,7 +131,6 @@ const Stats = ({ dataByDate, setDataByDate, statsPageExercise, date }) => {
           </button>
         </div>
       </div>
-
     </div>
   );
 };

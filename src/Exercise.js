@@ -1,3 +1,4 @@
+// Author:David Oti-George
 import React from "react";
 import "./Exercise.css";
 import renameIcon from "./icons/rename.png";

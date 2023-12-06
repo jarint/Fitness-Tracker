@@ -1,8 +1,5 @@
-// import Datepicker from "react-datepicker";
-// import "react-datepicker/dist/react-datepicker.css";
+// Author:David Oti-George
 import "./DatePicker.css";
-
-// export default DatePicker;
 
 export default function DatePicker({
   selectedDate,

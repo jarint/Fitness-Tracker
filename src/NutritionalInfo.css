@@ -113,6 +113,10 @@ body {
   outline: none;
 }
 
+#selectDate{
+  font-size: 36px;;
+}
+
 .info-container {
   display: flex;
   justify-content: center;
@@ -164,8 +168,9 @@ body {
 .calorie-breakdown {
   margin-left: -90px;
   text-align: left;
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
   display: inline-block;
+  font-size: 18px;
 }
 
 .set-goal-button {

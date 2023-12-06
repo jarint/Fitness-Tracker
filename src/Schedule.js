@@ -17,8 +17,18 @@ export default function Schedule() {
     const form = e.target;
     const formData = new FormData(form);
     const formJson = Object.fromEntries(formData.entries());
-    updateEvent(params.state, formJson, true);
   
+    if (formJson.eventName === null || formJson.eventName === ""){
+      return(
+        alert("Event name is missing")
+      )
+    }
+    if( formJson.startTime >formJson.endTime){
+      return(
+        alert("Invalid start time or end time")
+      )
+    }
+    updateEvent(params.state, formJson, true);
     const routeChange = () =>{
       let path = `/`;
       navigate(path)
@@ -35,7 +45,9 @@ export default function Schedule() {
       </div>
 
       {calendar()}
-
+      <p className='instructions'>
+        To refresh the page, select a day of the week
+      </p>
       {displayEvents(params.state)}
 
 
@@ -43,7 +55,7 @@ export default function Schedule() {
         <h2 id='scheduleTitle'> Add an Event</h2>
         <form className='scheduleExercise' onSubmit={HandleSubmit}>
           <label className='label'>
-            Event Name
+            <h3>Event Name</h3>
             <input type="text" name="eventName" className='formInput'></input>
           </label>
 
@@ -51,8 +63,8 @@ export default function Schedule() {
             <input type="text" name="exerciseName" className='formInput'></input>
           </label> */}
 
-          <label className='label'>Time
-            <div className='time'>
+          <label className='label'><h3>Time</h3>
+            <div className='time'> From
               <input type="time" name="startTime" className='formInput'></input>
               <p>To</p>
               <input type="time" name="endTime" className='formInput'></input>
@@ -72,6 +84,7 @@ export default function Schedule() {
 
       </div>
 
+      <Link to = "/">{NavigationBar()}</Link>
 
     </div>
 

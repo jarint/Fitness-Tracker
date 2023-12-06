@@ -107,17 +107,20 @@ function NutritionalInfo() {
           BACK
         </button>
 
-        <div>
+        <div className='datePicker'>
           {showDatePicker ? (
             <input type="date" value={selectedDate} onChange={handleDateChange} />
           ) : (
-            <button className="button" onClick={handleDateClick}>
+            <button className="button" id="selectDate" onClick={handleDateClick}>
               {selectedDate}
             </button>
           )}
         </div>
-
+        <p className='instructions'>
+          Select the bars below to add your food and water intake
+        </p>
         <div className="info-container">
+          
           <div className="set-hydration-bar" onClick={handleHydrationBarClick}>
             <div className="hydration-progress">
               <div

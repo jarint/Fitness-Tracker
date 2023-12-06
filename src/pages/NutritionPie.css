@@ -123,7 +123,12 @@
 .goal-section {
   margin-top: 20px;
   font-size: 18px;
+  font-weight: bolder;
   color: #333;
+  background-color: whitesmoke;
+  border: 1px solid #10739e ;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 /* Add media queries for responsive design if needed */

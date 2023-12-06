@@ -1,8 +1,9 @@
-import { Link, useLocation} from 'react-router-dom'
+import { Link, useNavigate} from 'react-router-dom'
 import './App.css'
 import Popup from "./Popup";
 import renameIcon from "./icons/rename.png";
 import deleteIcon from "./icons/trash3.svg";
+import { func } from 'prop-types';
 
 var sunday = [
   { startTime: "09:00", endTime:"10:00", eventName: "Jogging"},
@@ -64,14 +65,23 @@ function createButton(dayName, dayString){
  * @param {*} event - the event being removed
  * @param {*} day - day of the week of the event
  */
-function onDeleteClicked(event, day){
+function OnDeleteClicked(event, day){
   var dayName = getDayFromString(day);
   const newSchedule = dayName.filter((value)=>(
     value.eventName !== event
   ));
+
   console.log(newSchedule)
   updateEvent(day, newSchedule, false);
-  calendar();
+  
+  // let navigate = useNavigate();
+  // const routeChange (){
+  //   let path = `/`;
+  //   navigate(path)
+  // }
+  
+  // routeChange();
+  // calendar();
   
 }
 
@@ -130,7 +140,7 @@ export function displayEvents(day){
                 <div className="options" id='eventOptions'>
                   <button
                     className="trash_container"
-                    onClick={() => onDeleteClicked(val.eventName, day)}
+                    onClick={() => OnDeleteClicked(val.eventName, day)}
                   >
                     <img className="trash" alt="Options" src={deleteIcon} />
                   </button>
@@ -152,12 +162,12 @@ export function displayEvents(day){
  */
 export function updateEvent(dayName, formJson, addEvent){
   var objLength;
-
   switch( dayName ){
     case "Sunday":
       objLength = sunday.length;
       if (!addEvent){
         sunday = formJson;
+        
         break;
       }
       sunday[objLength]= 
@@ -259,7 +269,7 @@ function calendar(){
         <div className='day'>
           <h5>Sun</h5>
           <Link to= {`/Schedule`} state={"Sunday"} ><button type='button' className= 'dayEvent' id = "sunday">
-            {console.log("Main calendar", sunday)}
+            {/* {console.log("Main calendar", sunday)} */}
             {sunday.map((val, index)=>{
               return(
                 <div className='event' key={index}>
@@ -368,7 +378,7 @@ function calendar(){
 }
 
 export default function Calendar() {
-
+  
   return (
     <div className="calendar">
 

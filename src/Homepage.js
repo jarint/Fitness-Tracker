@@ -41,10 +41,18 @@ export default function Home() {
   return (
     <div className="base">
       <div className="banner">
-        <h2>Welcome!</h2>
+        <h2>Welcome to FitTrack!</h2>
       </div>
+      <br></br>
+       <p className="instructions">
+        Select a day of the week below to schedule an exercise
+      </p>
       {calendar()}
-
+      
+      <p className="instructions">
+        Select a category below to set and track your fitness goals
+      </p>
+     
       <div className="info-panels">
         <div className="activities">
           <Link to="/Workouts">
@@ -84,12 +92,12 @@ export default function Home() {
 
         <div className="activities">
           <div className="info" id="nutrition" onClick={handleTracker}>
-            <h3>Goals: </h3>
+            <h3>Nutrition Goals: </h3>
             <br />
-            Hydration: <b>{hydrationPercentage}</b>
+            <h5>Hydration:</h5> <b>{hydrationPercentage}</b> of goal reached
             <br />
             <br />
-            Nutrition:  <b> {nutritionPercentage}</b>
+            <h5>Nutrition:  </h5><b> {nutritionPercentage}</b> of goal reached
 
 
 

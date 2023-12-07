@@ -15,7 +15,7 @@ Harsh Patil (30125049)
 4. Run command `npm start`
 
 ## Running instructions (For evaluators and everyone else)
-1. Go to jarint.github.io/fitness-tracker for the deployed version of this app (last redeploy: Dec. 06, 2023)  <br />
+1. Visit our [GitHub pages site](https://jarint.github.io/fitness-tracker) for the deployed version of this app (last redeploy: Dec. 06, 2023)  <br />
 **Note:** The system session is not persisten so refreshing this page may clear all data that you've input. If you want to clear all data and are having issues, clear your browser cache or access the link through a private browser tab to ensure your browsing data is not being stored locally.
 
 ## General System Walkthroughs
@@ -46,5 +46,5 @@ Harsh Patil (30125049)
 3. click the "Start" button
 4. When completed, click the "Stop" button, followed by the "Save" button to save your progress.
 
-## Summary & Discussion
+## Summary
 The use cases described in the system walkthroughs cover the major functionalities of our system. Not enumerated among these are the various fields for deletion and editing activities. See our system demonstration video [here](https://drive.google.com/drive/folders/1sYZt4tW6pRzHfJs1viEhCmewZV8Wurnt?usp=sharing) for more detailed walkthroughs that show the editing/deletion features of each use case.

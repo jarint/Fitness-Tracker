@@ -47,4 +47,4 @@ Harsh Patil (30125049)
 4. When completed, click the "Stop" button, followed by the "Save" button to save your progress.
 
 ## Summary & Discussion
-
+The use cases described in the system walkthroughs cover the major functionalities of our system. Not enumerated among these are the various fields for deletion and editing activities. See our system demonstration video [here](https://drive.google.com/drive/folders/1sYZt4tW6pRzHfJs1viEhCmewZV8Wurnt?usp=sharing) for more detailed walkthroughs that show the editing/deletion features of each use case.

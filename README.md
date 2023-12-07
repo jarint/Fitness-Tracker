@@ -16,7 +16,7 @@ Harsh Patil (30125049)
 
 ## Running instructions (For evaluators and everyone else)
 1. Visit our [GitHub pages site](https://jarint.github.io/fitness-tracker) for the deployed version of this app (last redeploy: Dec. 06, 2023)  <br />
-**Note:** The system session is not persisten so refreshing this page may clear all data that you've input. If you want to clear all data and are having issues, clear your browser cache or access the link through a private browser tab to ensure your browsing data is not being stored locally.
+**Note:** The system session is not persistent so refreshing this page may clear all data that you've input. If you want to clear all data and are having issues, clear your browser cache or access the link through a private browser tab to ensure your browsing data is not being stored locally.
 
 ## General System Walkthroughs
 #### Walkthrough 1 - Scheduling a Workout

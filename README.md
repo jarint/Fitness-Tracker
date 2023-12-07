@@ -15,17 +15,36 @@ Harsh Patil (30125049)
 4. Run command `npm start`
 
 ## Running instructions (For evaluators and everyone else)
-1. Go to jarint.github.io/fitness-tracker for the deployed version of this app (last redeploy: Dec. 06, 2023)
+1. Go to jarint.github.io/fitness-tracker for the deployed version of this app (last redeploy: Dec. 06, 2023)  <br />
 **Note:** The system session is not persisten so refreshing this page may clear all data that you've input. If you want to clear all data and are having issues, clear your browser cache or access the link through a private browser tab to ensure your browsing data is not being stored locally.
 
-## System Walkthroughs
+## General System Walkthroughs
 #### Walkthrough 1 - Scheduling a Workout
 1. From the Home screen, click a day on the calendar
 2. Scroll down to the event field and enter the name of a new workout
 3. Enter the start and end time of the workout in the time field
 4. Tap save. When you click the home icon, your new workout will be added to your schedule.
 
-#### Walkthrough 2 - Planning a Workout
+#### Walkthrough 2 - Adding an exercise to a Workout
 1. From the home page, click the My Workouts screen
 2. Click the "Add Exercise" button and enter the name of the exercise and the number of sets and reps to complete.
 3. Click "Add" and the new Exercise will now be present on the My Workouts page.
+
+#### Walkthrough 3 - Tracking Nutrition and Hydration
+1. From the Home page, click on the "Nutrition Goals" panel
+2. Click "Set Goal"
+3. Add your nutrition and hydration goals for the day
+4. Click "Confirm"
+5. Click on either the Nutrition or Hydration progress bars
+6. Click the "Edit" button
+7. Add in the type of Food/Beverage consumed and the approximate weight/volume from the drop down menu, or using the "Add Item" button
+8. Click "Save"
+
+#### Walkthrough 4 - Tracking a Run
+1. From the Home page, click the "Time Active" panel
+2. Set a goal time and goal distance with the fields at the top of the page
+3. click the "Start" button
+4. When completed, click the "Stop" button, followed by the "Save" button to save your progress.
+
+## Summary & Discussion
+
